@@ -3,10 +3,8 @@ Description=Ina Wah Service
 
 [Service]
 Type=simple
-#Environment=DISPLAY=:0 PULSE_SERVER=unix:/run/user/$MY_ID/pulse/native
-ExecStart=/bin/bash /opt/ina_script.sh
+ExecStart=/bin/bash /opt/ina_wah.sh
 Restart=always
-#User=$USER
 
 [Install]
 WantedBy=multi-user.target

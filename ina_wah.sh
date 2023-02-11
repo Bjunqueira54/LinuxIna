@@ -2,7 +2,7 @@
 
 #Some vars for Quality of Life
 INA_SLEEP_MIN=30;
-INA_SLEEP_MAX=300;
+INA_SLEEP_MAX=60;
 
 #Zeros for string format, to fetch correct sound files
 ZEROS=000000;
