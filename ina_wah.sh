@@ -1,5 +1,9 @@
 #!/bin/bash
 
+#Some vars for Quality of Life
+INA_SLEEP_MIN=30;
+INA_SLEEP_MAX=300;
+
 #Zeros for string format, to fetch correct sound files
 ZEROS=000000;
 
@@ -17,5 +21,5 @@ cvlc --no-xlib --play-and-exit /tmp/INA_WAH.mp3;
 rm -f /tmp/INA_WAH.mp3;
 
 # Add a random delay between 1 and 5 minutes
-sleep $((RANDOM % 300 + 60));
-
+RAND_SLEEP=$[$RANDOM % $INA_SLEEP_MAX + $INA_SLEEP_MIN];
+sleep $RAND_SLEEP;
